@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Form</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            width: 90%;
+            margin: auto;
+        }
+        
+        #headerLeft {
+            width: 50%;
+            height: 100px;
+/*            background-color: red;*/
+            float: left;
+            text-align: center
+        }
+
+        #headerRight {
+            width: 50%;
+            height: 100px;
+/*            background-color: blue;*/
+            float: left;
+            text-align: center;
+        }
+
+        #firstTitle {
+            line-height: 100px;
+            text-align: center;
+/*            background-color: aquamarine;*/
+        }
+
+        #secondTitle {
+            text-align: center;
+            line-height: 25px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+/*            background-color: aquamarine;*/
+        }
+
+        #firstContant {
+            line-height: 35px;
+        }
+        
+        #firstContant [name="class"] {
+            width: 20px;
+            text-align: center;
+        }
+        
+        #secondContant {
+            line-height: 35px;
+        }
+        
+        #secondContant [name="reson"] {
+            width: 500px
+        }
+        
+        #footerLeft {
+            width: 50%;
+/*            background-color: red;*/
+            float: left;
+            text-align: center
+        }
+
+        #footerRight {
+            width: 50%;
+/*            background-color: blue;*/
+            float: left;
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="headerLeft">
+            <br /><br />សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ
+            <br />ដេប៉ាតឺម៉ង់ព័ត៏មានវិទ្យា
+        </div>
+        <div id="headerRight">
+            <br />ព្រះរាជាណាចក្រកម្ពុជា
+            <br />ជាតិ សាសនា ព្រះមហាក្សត្រ
+        </div>
+    </div>
+    <div id="firstTitle">
+        <u>លិខិតសុំច្បាប់</u>
+    </div>
+    <div id="firstContant">
+        <form>
+            &nbsp&nbsp&nbsp ខ្ញុំបាទ/នាងខ្ញុំឈ្មោះ
+            <input type="text" name="name" />
+            ជា​និស្សិត​រៀន​ឆ្នាំ​ទី​
+            <select>
+                <option value="year1">ឆ្នាំ​ទី​១</option>
+                <option value="year2">ឆ្នាំ​ទី​២</option>
+                <option value="year3">ឆ្នាំ​ទី​៣</option>
+                <option value="year4">ឆ្នាំ​ទី​៤</option>
+            </select>
+            ថ្នាក់​
+            <select>
+                <option value="M">M</option>
+                <option value="A">A</option>
+                <option value="E">E</option>
+            </select>
+            <input type="text" maxlength="2" name="class" />
+            ផ្នែក​ព័ត៏មាន​វិទ្យា​ នៃ​សាកលវិទ្យាល័យ​ភូមិន្ទ​ភ្នំពេញ​។​
+        </form>
+    </div>
+    <div id="secondTitle">
+        សូម​គោរព​ជូន​<br />លោក​ប្រធាន​ដេប៉ាតឺម៉ង់​ព័ត៏មាន​វិទ្យា​
+    </div>
+    <div id="secondContant">
+        <form>
+            <b><u>កម្មវត្ថុ:</u></b>
+            សំណើ​សុំច្បាប់​ឈប់​សម្រាក់​ចំនួន​
+            <input type="radio" name="num" value="1day"/>១ថ្ងៃ​
+            <input type="radio" name="num" value="firstHour"/>ម៉ោង​ទី​១​
+            <input type="radio" name="num" value="secondHour"/>ម៉ោង​ទី​២​
+            <br/>នៅ​ថ្ងៃ​ទី​ <input type="date" name="stopDate" />
+<!--
+            <input type="text" name="stopDay" />
+            ខែ​<input type="text" name="stopMonth" />
+            ឆ្នាំ​<input type="text" name="stopYear" />
+-->
+            <br/><b><u>មូលហេតុ​:</u></b> <input type="text" name="reson" />
+            <br/>អាស្រ័យ​ហេតុ​នេះ​សូម​លោក​ប្រធាន​មេត្ដា​អនុញ្ញាតិ​ដល់​ខ្ញុំ​បាទ​/​នាង​ខ្ញុំ​ ដោយ​ក្ដី​អនុគ្រោះ​។​ សូម​លោក​ប្រធាន​ទទួល​នូវ​ការ​គោរព​ដ៏​ខ្ពង់​ខ្ពស់​អំពី​ខ្ញុំ​។
+        </form>
+    </div>
+    <div id="footer">
+        <div id="footerLeft">
+            <br /><br /><br /><br /><br /><br />
+            ព​.​ម​.​វ​
+            <input type="date" name="teacherSignDate" />
+<!--
+            ថ្ងៃ​ទី​<input type="text" name="day" />
+            ខែ​<input type="text" name="month" />
+            ឆ្នាំ​<input type="text" name="year" />
+-->
+        </div>
+        <div id="footerRight">
+            <br />ធ្វើ​នៅ​ភ្នំពេញ​ថ្ងៃ​ទី​
+            <input type="date" name="studentSignDate" />
+<!--
+            <input type="text" name="signDay" />
+            ខែ​<input type="text" name="month" />
+            ឆ្នាំ​<input type="text" name="year" />
+-->
+            <br />ហត្ថលេខា​ និង​ ឈ្មោះ
+        </div>
+    </div>
+</body></html>
+
+
+
+
+
+
+
+

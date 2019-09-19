@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'gisbon';
+    src: url('/fonts/gisbon/Gisbon.ttf'),
+        url('/fonts/gisbon/Gisbon.eot'),
+        url('/fonts/gisbon/Gisbon.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/gisbon/Gisbon.woff2') format('woff2'),
+        url('/fonts/gisbon/Gisbon.woff') format('woff'),
+        url('/fonts/gisbon/Gisbon.svg#Gisbon') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333333;
+}
+
+h1 {
+    font-family: 'gisbon';
+    border: 30px dashed #D4AF37;
+    margin: 20px;
+    padding: 30px;
+    color: #FFF;
+    background: url('/image/image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.example1 {
+    background-origin: border-box;
+}
+
+.example2 {
+    background-origin: padding-box;
+}
+
+.example3 {
+    background-origin: content-box;
+}

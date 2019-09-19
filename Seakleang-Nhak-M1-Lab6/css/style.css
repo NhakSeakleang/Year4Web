@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    border: 1px dashed #0000FF;
+}
+
+p {
+    border: 1px dashed #0000FF;
+    padding: 0 0 0 70px;
+    text-align: justify;
+}
+
+.container {
+    border: 1px dashed black;
+    float: left;
+}
+
+.top-container {
+    border: 1px dashed black;
+}
+
+.bottom-container {
+    border: 1px dashed black;
+}
+
+.articale {
+    border: 1px solid #FF0000;
+    margin: 10px 255px 8px 30px;
+}
+
+.paragrap {
+    border: 1px solid #FF0000;
+    margin: 3px 30px;
+}

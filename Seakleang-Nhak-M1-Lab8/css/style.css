@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+}
+
+#nav {
+    height: 50px;
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #a83277;
+}
+
+#nav ul, #nav li, #nav a {
+    list-style: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #a83277;
+}
+
+#nav a {
+    text-decoration: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+#nav ul a:hover {
+    background-color: #5c1a40;
+}
+
+#sub-menu1 {
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+#sub-menu2 {
+    display: none;
+    position: absolute;
+    left: 134px;
+}
+
+#sub-menu1 ul, #sub-menu2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav ul li:hover #sub-menu1 {
+    display: flex;
+}
+
+#sub-menu1 ul li:hover #sub-menu2 {
+    display: flex;
+}
+
+#contain {
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Border image*/
+#borderImage {
+    border: 20px solid transparent;
+    padding: 10px;
+    /* Safari 3.1-5 */
+    -webkit-border-image: url('../image/border.png') 110 round;
+    /* Opera 11-12.1 */
+    -o-border-image: url('../image/border.png') 110 round;
+    border-image: url('../image/border.png') 110 round;
+}
+
+/*Table*/
+table {
+    min-width: 500px;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #333
+}
+
+tbody {
+    background-color: #DDD
+}
+
+tr {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #BBB
+}
+
+th {
+    color: #FFF
+}
+
+th, td {
+    padding: 5px;
+}
+
+.league {
+    text-align: left
+}
+
+.date {
+    text-align: right;
+    font-weight: normal;
+}
+
+.team1 {
+    text-align: right;
+}
+
+.result {
+    text-align: center;
+    color: #0000FF
+}
+
+/*Opacity*/
+.opacity {
+    height: 300px;
+    width: 300px;
+    background-image: url('../image/image.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.opacity p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 5px;
+}
+
+/*transform*/
+#myDiv {
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg); /* Standard syntax */
+    padding: 10px;
+    background-color: #F2A31C;
+}
+
+/*form*/
+#div_form {
+    width: 700px;
+/*    min-height: 400px;*/
+    background-color: #DDD;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+}
+
+form {
+    height: 100v;
+    width: 100%;
+}
+
+#form-body {
+    display: flex;
+}
+
+#left {
+    width: 40%;
+    height: v;
+}
+
+#right {
+    width: 60%;
+    height: v;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #AAA;
+}
+
+input[type="button"] {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #16a80e;
+    color: #FFF;
+    background-color: #16a80e
+}
+
+input[type="button"]:hover {
+    border: 1px solid #10790a;
+    background-color: #10790a
+}
+
+#txtMessage {
+    border-radius: 5px;
+}
