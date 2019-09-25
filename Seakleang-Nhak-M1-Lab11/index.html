@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="javascript/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="display">0</div>
+            <form>
+                <table>
+                    <tr>
+                        <td><input type="button" value="C" onclick="clearDisplay()"/></td>
+                        <td><input type="button" value="CE" onclick="clearOne()"/></td>
+                        <td><input type="button" value="M" onclick="saveNumber()"/></td>
+                        <td><input type="button" value="&divide;" onclick="addOperator('divide')"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="displayData(7)"/></td>
+                        <td><input type="button" value="8" onclick="displayData(8)"/></td>
+                        <td><input type="button" value="9" onclick="displayData(9)"/></td>
+                        <td><input type="button" value="&times;" onclick="addOperator('times')"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="displayData(4)"/></td>
+                        <td><input type="button" value="5" onclick="displayData(5)"/></td>
+                        <td><input type="button" value="6" onclick="displayData(6)"/></td>
+                        <td><input type="button" value="&minus;" onclick="addOperator('minus')"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="displayData(1)"/></td>
+                        <td><input type="button" value="2" onclick="displayData(2)"/></td>
+                        <td><input type="button" value="3" onclick="displayData(3)"/></td>
+                        <td rowspan="2"><input type="button" id="key-plus" value="&plus;" onclick="addOperator('plus')"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="0" onclick="displayData(0)"/></td>
+                        <td><input type="button" value="&sdot;" onclick="addDot()"/></td>
+                        <td><input type="button" value="&equals;" onclick="cal()"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="store-data">
+            <p id="first-value">0</p>
+            <p id="second-value">0</p>
+            <p id="memory-value">0</p>
+            <p id="operator"></p>
+        </div>
+    </body>
+</html>
