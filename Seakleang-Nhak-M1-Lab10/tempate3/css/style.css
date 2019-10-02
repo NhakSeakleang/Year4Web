@@ -42,6 +42,16 @@ body {
     box-shadow: 0 5px 3px;
 }
 
+#header #city-portal {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+}
+
 #header #menu {
     background: linear-gradient(#242424, #242424, #2e2e2e, #5e5e5e);
     list-style: none;
@@ -87,14 +97,14 @@ body {
     border-bottom: 1px solid #555;
 }
 
-#content #left #search {
+#content #left #select-city {
     padding: 20px 50px;
     background-color: #858585;
 }
 
-#content #left #search select {
+#content #left #select-city select {
     height: 25px;
-    width: 300px;
+    width: 100%;
 }
 
 #content #left #popular-link {
@@ -128,6 +138,146 @@ body {
 #content #right {
     width: 75%;
     background-color: #EEE;
+    padding: 0 25px;
+    position: relative;
+}
+
+#content #right #top {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+#content #right #top #date {
+    margin: 0 70px;
+    text-transform: uppercase;
+}
+
+#content #right #top #search {
+    height: 100%;
+    width: 61%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    background-color: #999;
+    box-shadow: inset 0 5px 5px #444
+}
+
+#content #right #top #search input[type="text"] {
+    margin: 0 10px;
+    width: 75%;
+    height: 50%;
+    background-color: #555;
+    border: none;
+    padding: 0 10px;
+}
+
+#content #right #top #search input[type="text"]::placeholder {
+    color: #FFF;
+    opacity: 0.7
+}
+
+#content #right #top #search input[type="button"] {
+    height: 50%;
+    width: 20%;
+    color: #FFF;
+    background: linear-gradient(#CCC, #AAA, #555, #444, #333);
+    border: none;
+    text-transform: uppercase;
+}
+
+#content #right #image {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#content #right #image img {
+    width: 30%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #DDD;
+    box-shadow: 3px 3px 3px #AAA;
+}
+
+#content #right #bottom {
+/*    height: 340px;*/
+    display: flex;
+}
+
+#content #right #bottom #news {
+    width: 70%;
+}
+
+#content #right #bottom #news #title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
+
+#content #right #bottom #news #news-item {
+    width: 97%;
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #AAA;
+}
+
+#content #right #bottom #news #news-item:last-child {
+    margin-bottom: 50px;
+}
+
+#content #right #bottom #news #news-item img {
+    width: 130px;
+    border: 1.5px solid #AAA;
+}
+
+#content #right #bottom #news #news-item #detail {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#content #right #bottom #weather {
+    width: 30%;
+    background-color: #BBB;
+}
+
+#content #right #bottom #weather #weather-item {
+    width: 93%;
+    padding: 5px 10px;
+    height: 150px;
+}
+
+#content #right #bottom #weather #weather-item:first-child {
+    padding: 15px;
+    height: auto;
+}
+
+#content #right #bottom #weather #weather-item:first-child #title {
+    text-transform: uppercase;
+    color: #444;
+    font-weight: bold;
+}
+
+#content #right #bottom #weather #weather-item:first-child #detail {
+    margin: 10px 0;
+    display: flex;
+}
+
+#content #right #bottom #weather #weather-item:first-child #detail img {
+    width: 40%;
+}
+
+#content #right #bottom #weather #weather-item:first-child #detail #overcast {
+    padding: 10px;
+}
+
+#content #right #bottom #weather #weather-item:first-child #detail #overcast #hi {
+    color: #D00;
+}
+
+#content #right #bottom #weather #weather-item:first-child #detail #overcast #lo {
+    color: #0390fc;
 }
 
 #footer {
