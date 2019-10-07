@@ -5,6 +5,7 @@
 
 body {
     padding: 10px 40px;
+    font-family: 'Arial';
 }
 
 #nav a {
@@ -38,10 +39,11 @@ body {
 
 #login-form input[type="button"] {
     background: linear-gradient(#ef9815, #e0550b);
-    padding: 5px 15px;
+    padding: 6px 15px;
     color: #FFF;
     font-size: 12px;
     border-radius: 3px;
+    border: none;
 }
 
 #nav #menu {

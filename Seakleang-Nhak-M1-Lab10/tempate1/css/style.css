@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'nevis-Bold';
+  src: url('../font/nevis-Bold/nevis-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/nevis-Bold/nevis-Bold.woff') format('woff'),
+      url('../font/nevis-Bold/nevis-Bold.ttf')  format('truetype'), 
+      url('../font/nevis-Bold/nevis-Bold.svg#nevis-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'wingdings';
+  src: url('../font/Wingdings3/Wingdings3.eot?#iefix') format('embedded-opentype'),
+      url('../font/Wingdings3/Wingdings3.woff') format('woff'),
+      url('../font/Wingdings3/Wingdings3.ttf')  format('truetype'), 
+      url('../font/Wingdings3/Wingdings3.svg#nevis-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0
@@ -5,6 +25,7 @@
 
 body {
     background-color: #F5F5F5;
+    font-family: 'Arial';
 }
 
 hr {
@@ -88,6 +109,7 @@ hr {
     font-size: 100px;
     letter-spacing: 10px;
     line-height: 90px;
+    font-family: 'nevis-Bold'
 }
 
 #header-image #left #view-portfolio {
@@ -136,6 +158,10 @@ hr {
     width: 370px;
 }
 
+#body-content #title span {
+    font-family: 'wingdings';
+}
+
 #body-content #title {
     text-transform: uppercase;
     padding: 5px 0;
@@ -162,7 +188,7 @@ hr {
 #testimonials a {
     text-decoration: none;
     color: #000;
-    font-weight: bold;
+    font-style: italic;
 }
 
 #our-benefits div {
@@ -170,10 +196,15 @@ hr {
     align-items: flex-start;
 }
 
+#our-benefits h3 span {
+    background-color: #F5F5F5;
+}
+
 #our-benefits span {
     background-color: #CCC;
     padding: 0 4px;
     margin-right: 20px;
+    font-family: 'wingdings';
 }
 
 /*portfilio*/

@@ -5,6 +5,7 @@
 
 body {
     background-color: #EEE;
+    font-family: 'Arial';
 }
 
 #header #top {
@@ -149,7 +150,8 @@ body {
 }
 
 #content #right #top #date {
-    margin: 0 70px;
+    width: 33%;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -264,8 +266,13 @@ body {
     display: flex;
 }
 
-#content #right #bottom #weather #weather-item:first-child #detail img {
-    width: 40%;
+#content #right #bottom #weather #weather-item:first-child #detail #image {
+    width: 130px;
+    height: 120px;
+    margin: 0;
+    background-image: url('../images/weather.jpg');
+    background-size: cover;
+    box-shadow: inset 3px 5px 5px #666;
 }
 
 #content #right #bottom #weather #weather-item:first-child #detail #overcast {
